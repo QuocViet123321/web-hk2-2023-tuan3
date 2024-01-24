@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            background-image: linear-gradient(45deg,rgb(105,198,237),rgb(93, 174, 241));
+            width: 100%;
+            height: 600px;
+        }
+
+        /* HEADER */
+        .header{
+            display: flex;
+            justify-content: space-between;
+            height: 10%;
+            align-items: center;
+            margin-right: 20px;
+            border-bottom: 7px dotted #fff;
+        }
+        .nav{
+            height: 100%;
+        }
+        .nav li{
+            display: inline-block;
+            width: 120px;
+            height: 100%;
+            text-align: center;
+        }
+
+        .nav li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+        .header h1{
+            font-size: 30px;
+            color: #fff;
+            text-shadow: 4px 3px 3px rgb(3, 3, 224);
+        }
+        /* BODY */
+        .body_content{
+            width: 50%;
+
+        }
+
+        .body_img{
+            width: 50%;
+        }
+        
+        /* FOOTER */
+        .footer{
+            height: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </div>
+            <h1>Sky World</h1>
+        </div>
+        <div class="body">
+            <div class="body_content">
+                <h1>Registration Information</h1>
+                <p>Start your travel planning now with our on-line tour regstration
+                    form. Just tell us a little about yourself and your group and one of our travel
+                    experts will contact  you  to create the perfect custom built for your group's needs .</p>
+                <form action="">
+                    
+                    
+                    
+
+                    <table>
+                        <tr>
+                            <td><label for="LBtitle">Title</label></td>
+                            <td><select name="" id="LBtitle">
+                                <option value="">Mr</option>
+                                <option value="">Mrs</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fname">Full Name *</label></td>
+                            <td><input type="text" id = "fname"  placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Mailing Address</label></td>
+                            <td><input type="text" placeholder="Macling Address" id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="city">City</label></td>
+                            <td><input type="text" id="city" placeholder="City"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Country</label></td>
+                            <td><input type="text" id="country" placeholder="Country"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="request">Specifis questions or request about your tours</label>
+                            </td>
+                            <td><textarea name="" id="request" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+            <div class="body_img">
+
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>
